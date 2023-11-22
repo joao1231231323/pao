@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio do Restaurante</title>
+    <style>
+        /* Estilizando o texto com uma classe padrão */
+        .texto-dinamico {
+            font-size: 18px;
+            transition: color 10s ease;
+            /* Adicionando uma transição suave para a mudança de cor */
+        }
+    </style>
+
+
+    <link rel="stylesheet" href="mexico.css">
+    <link rel="stylesheet" href="botao.css">
+
+</head>
+
+<body>
+
+    <header>
+
+
+        <ul>
+            <p id="textoGradienteRGB" class="texto-gradient-rgb">MEXICO</p>
+            <p id="textoGradientePorLetra" class="gradiente-por-letra">temos os melhores ingredentes
+            </p>
+            </h1>
+
+
+            <script>
+                function atualizarCorRGB() {
+                    var elementoTexto = document.getElementById('textoGradienteRGB');
+                    var tempo = new Date().getTime();
+
+                    var pao = Math.sin(tempo * 0.002) * 127 + 128;
+                    var verde = Math.sin(tempo * 0.002 + 2) * 127 + 128;
+                    var azul = Math.sin(tempo * 0.002 + 4) * 127 + 128;
+
+                    var corRGB = `rgb(${Math.floor(azul)}, ${Math.floor(verde)}, ${Math.floor(pao)})`;
+
+                    elementoTexto.style.color = corRGB;
+                }
+
+                setInterval(atualizarCorRGB, 30); // Atualizar a cor a cada 30 milissegundos
+
+
+            </script>
+            <nav>
+                <ul>
+
+                    <li>
+                        <p><a href="cardapio.html">Cardapio</a></p>
+                    </li>
+                </ul>
+
+            </nav>
+
+        </ul>
+
+
+        </nav>
+    </header>
+
+
+
+    <img class="bandeiras" src="Tortilla.jpg" alt="Bandeira do Brasil" width="350">
+    <strong>TORTILIA</strong>
+    <a href="botao.html" class="animated-button1">
+        <span></span>
+        comprar
+        <span></span>
+        <span></span>
+        <span></span>
+    </a>
+    <nav>
+        <hr>
+    </nav>
+
+    <img class="bandeiras" src="Chili com carne.png" alt="Bandeira do Brasil" width="350">
+    <strong>CHILLI CARNE </strong>
+    <a href="botao.html" class="animated-button1">
+        <span></span>
+        comprar
+        <span></span>
+        <span></span>
+        <span></span>
+    </a>
+    <nav>
+        <hr>
+    </nav>
+
+    <img class="bandeiras" src="Quesadilla.jpg" alt="Bandeira do Brasil" width="350">
+    <strong>QUESADILLA</strong>
+    <a href="botao.html" class="animated-button1">
+        <span></span>
+        comprar
+        <span></span>
+        <span></span>
+        <span></span>
+    </a>
+    <nav>
+        <hr>
+    </nav>
+
+    <img class="bandeiras" src="Tacos.avif" alt="Bandeira do Brasil" width="350">
+    <strong>TACOS</strong>
+    <a href="botao.html" class="animated-button1">
+        <span></span>
+        comprar
+        <span></span>
+        <span></span>
+        <span></span>
+    </a>
+    <nav>
+        <hr>
+    </nav>
+
+    <header>
+        <h1>Sobremesas</h1>
+        <nav>
+            <ul>
+                <li><a href="#entradas">Aprveita nossa Sobremesas saborosas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <img class="bandeiras" src="Polvorones-Caseros-Faciles.jpg" alt="Bandeira do Brasil" width="350">
+    <strong>POLVORONES</strong>
+    <a href="botao.html" class="animated-button1">
+        <span></span>
+        comprar
+        <span></span>
+        <span></span>
+        <span></span>
+    </a>
+    <nav>
+        <HR>
+    </nav>
+
+    <img class="bandeiras" src="l-intro-1672335198.jpg" alt="Bandeira do Brasil" width="350">
+    <strong>TORTA MAIA</strong>
+    <a href="botao.html" class="animated-button1">
+        <span></span>
+        comprar
+        <span></span>
+        <span></span>
+        <span></span>
+    </a>
+    <nav>
+        <HR>
+    </nav>
+
+
+
+</body>
+
+</html>
