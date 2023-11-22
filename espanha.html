@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio do Restaurante</title>
+    <style>
+        /* Estilizando o texto com uma classe padrão */
+        .texto-dinamico {
+            font-size: 18px;
+            transition: color 10s ease;
+            /* Adicionando uma transição suave para a mudança de cor */
+        }
+    </style>
+
+
+    <link rel="stylesheet" href="espanha.css">
+    <link rel="stylesheet" href="botao.css">
+
+</head>
+
+<body>
+
+    <header>
+
+
+        <ul>
+            <p id="textoGradienteRGB" class="texto-gradient-rgb">ESPANHA</p>
+            <p id="textoGradientePorLetra" class="gradiente-por-letra">
+            <h4>temos os melhores ingredentes</h4>
+            </p>
+
+
+
+            <script>
+                function atualizarCorRGB() {
+                    var elementoTexto = document.getElementById('textoGradienteRGB');
+                    var tempo = new Date().getTime();
+
+                    var pao = Math.sin(tempo * 0.002) * 127 + 128;
+                    var verde = Math.sin(tempo * 0.002 + 2) * 127 + 128;
+                    var azul = Math.sin(tempo * 0.002 + 4) * 127 + 128;
+
+                    var corRGB = `rgb(${Math.floor(azul)}, ${Math.floor(verde)}, ${Math.floor(pao)})`;
+
+                    elementoTexto.style.color = corRGB;
+                }
+
+                setInterval(atualizarCorRGB, 30); // Atualizar a cor a cada 30 milissegundos
+
+
+            </script>
+            <nav>
+                <ul>
+
+                    <li>
+                        <p><a href="cardapio.html">Cardapio</a></p>
+                    </li>
+                </ul>
+
+            </nav>
+
+        </ul>
+
+
+        </nav>
+    </header>
+
+
+
+    <img class="bandeiras" src="Gazpacho.webp" alt="Bandeira do Brasil" width="300">
+    <strong> GAZPACHO</strong>
+    <a href="botao.html" class="animated-button1">
+        <span></span>
+        comprar
+        <span></span>
+        <span></span>
+        <span></span>
+    </a>
+    <nav>
+        <hr>
+    </nav>
+
+    <img class="bandeiras" src="Calamares a la Romana.jpg" alt="Bandeira do Brasil" width="350">
+    <strong>CALAMARES ROMANA</strong>
+    <a href="botao.html" class="animated-button1">
+        <span></span>
+        comprar
+        <span></span>
+        <span></span>
+        <span></span>
+    </a>
+    <nav>
+        <hr>
+    </nav>
+
+    <img class="bandeiras" src="Queijo espanhol.jpg" alt="Bandeira do Brasil" width="350">
+    <strong> QUEIJO ESPANHOL</strong>
+    <a href="botao.html" class="animated-button1">
+        <span></span>
+        comprar
+        <span></span>
+        <span></span>
+        <span></span>
+    </a>
+    <nav>
+        <hr>
+    </nav>
+
+    <img class="bandeiras" src="Pescaíto frito.jpeg" alt="Bandeira do Brasil" width="350">
+    <strong> PESCAÍTO FRITO</strong>
+    <a href="botao.html" class="animated-button1">
+        <span></span>
+        comprar
+        <span></span>
+        <span></span>
+        <span></span>
+    </a>
+    <nav>
+        <hr>
+    </nav>
+
+    <header>
+        <h1>Sobremesas</h1>
+        <nav>
+            <ul>
+                <li><a href="#entradas">Aprveita nossa Sobremesas saborosas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <img class="bandeiras" src="fcax4xkuhgdabkvh0kzq.jpg" alt="Bandeira do Brasil" width="350">
+    <strong> CHURROS COM CHOCOLATE</strong>
+    <a href="botao.html" class="animated-button1">
+        <span></span>
+        comprar
+        <span></span>
+        <span></span>
+        <span></span>
+    </a>
+    <nav>
+        <HR>
+    </nav>
+
+    <img class="bandeiras" src="maxresdefault.jpg" alt="Bandeira do Brasil" width="350">
+    <strong> TORTA DE SANTIAGO</strong>
+    <a href="botao.html" class="animated-button1">
+        <span></span>
+        comprar
+        <span></span>
+        <span></span>
+        <span></span>
+    </a>
+    <nav>
+        <HR>
+    </nav>
+
+
+
+</body>
+
+</html>
